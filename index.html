@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    /> 
+    <title>Interactive pricing component</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trail, No credit card required</p>
+      </header>
+      <aside>
+        <div class="page">
+          <div class="page-views"><span>100k</span> pageviews</div>
+
+          <div class="price">
+            <span>$ <span class="fixed-price">16</span>.00</span>
+            <span class="month">/month</span>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar">
+            <input type="range" min="1" max="5" step="1" value="3 " class="myrange">
+          </div>
+          <div class="monthly">
+            <span>Monthly Billing</span>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <span>Yearly Billing</span>
+            <span class="discount">25% discount</span>
+          </div>
+        </div>
+        <hr>
+        <div class="start">
+            <ul>
+                <li>Unlimited Website</li>
+                <li>100% data ownership</li>
+                <li>Email Reports</li>
+            </ul>
+            <button>start my trail</button>
+        </div>
+      </aside>
+    </main>
+
+
+    <script src="./app.js"></script>
+  </body>
+</html>
