@@ -2,8 +2,8 @@ let myCheckbox = document.querySelector(".switch input"),
   duration = document.querySelector(".month"),
   price = document.querySelector(".price .fixed-price"),
   switcher = document.querySelector(".switch"),
-  range = document.querySelector(".myrange");
-
+  range = document.querySelector(".myrange"); 
+ 
 switcher.onclick = function () {
   if (myCheckbox.checked == true) {
     let priceInt = parseInt(price.textContent);
@@ -33,7 +33,7 @@ function updatePrice() {
   if (range.value == 2) {
     if (myCheckbox.checked == true) {
       price.textContent = 108;
-    } else {
+    } else {                             
       price.textContent = 12;
     }
 
@@ -77,19 +77,19 @@ startTrailButton.addEventListener("click", function () {
 
     if (selectedRange == 1) {
         pageviews = "10k";
-        calculatedPrice = myCheckbox.checked ? ((8 - (8 * 0.25)) * 12).toFixed(2) : "8.00";
+        calculatedPrice = myCheckbox.checked ? "72.00/year" : "8.00/month";
     } else if (selectedRange == 2) {
         pageviews = "50k";
-        calculatedPrice = myCheckbox.checked ? "108.00" : "12.00";
+        calculatedPrice = myCheckbox.checked ? "108.00/year" : "12.00/month";
     } else if (selectedRange == 3) {
         pageviews = "100k";
-        calculatedPrice = myCheckbox.checked ? "144.00" : "16.00";
+        calculatedPrice = myCheckbox.checked ? "144.00/year" : "16.00/month";
     } else if (selectedRange == 4) {
         pageviews = "500k";
-        calculatedPrice = myCheckbox.checked ? "216.00" : "24.00";
+        calculatedPrice = myCheckbox.checked ? "216.00/year" : "24.00/month";
     } else if (selectedRange == 5) {
         pageviews = "1M";
-        calculatedPrice = myCheckbox.checked ? "324.00" : "36.00";
+        calculatedPrice = myCheckbox.checked ? "324.00/year" : "36.00/month";
     }
     const url = `trailPage.html?pageviews=${pageviews}&price=${calculatedPrice}`;
 
